@@ -11,7 +11,7 @@ trait CustomMediaProperties
         return $this;
     }
 
-    public function getCustomHeaders(): array
+    public function getCustomHeaders()
     {
         return $this->getCustomProperty('custom_headers', []);
     }

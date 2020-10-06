@@ -82,7 +82,7 @@ class ResponsiveImage
         return (int) last($propertyParts);
     }
 
-    protected function getPropertyParts(): array
+    protected function getPropertyParts()
     {
         $propertyString = $this->stringBetween($this->fileName, '___', '.');
 

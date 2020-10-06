@@ -86,7 +86,7 @@ class RegenerateCommand extends Command
         return $this->mediaRepository->getByIds($mediaIds);
     }
 
-    protected function getMediaIds(): array
+    protected function getMediaIds()
     {
         $mediaIds = $this->option('ids');
 

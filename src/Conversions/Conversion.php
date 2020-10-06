@@ -54,7 +54,7 @@ class Conversion
         return $this->name;
     }
 
-    public function getPerformOnCollections(): array
+    public function getPerformOnCollections()
     {
         if (! count($this->performOnCollections)) {
             return ['default'];

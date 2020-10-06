@@ -141,7 +141,7 @@ class Filesystem
         string $file,
         array $mediaCustomHeaders = [],
         string $mimeType = null
-    ): array {
+    ) {
         $mimeTypeHeader = ['ContentType' => $mimeType ?: File::getMimeType($file)];
 
         $extraHeaders = config('media-library.remote.extra_headers');

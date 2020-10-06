@@ -26,7 +26,7 @@ class RegisteredResponsiveImages
             ->filter(fn (ResponsiveImage $responsiveImage) => $responsiveImage->generatedFor() === $this->generatedFor);
     }
 
-    public function getUrls(): array
+    public function getUrls()
     {
         return $this->files
             ->map(fn (ResponsiveImage $responsiveImage) => $responsiveImage->url())

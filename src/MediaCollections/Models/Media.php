@@ -175,7 +175,7 @@ class Media extends Model implements Responsable, Htmlable
         return $this;
     }
 
-    public function getMediaConversionNames(): array
+    public function getMediaConversionNames()
     {
         $conversions = ConversionCollection::createForMedia($this);
 
@@ -224,7 +224,7 @@ class Media extends Model implements Responsable, Htmlable
         }, 200, $downloadHeaders);
     }
 
-    public function getResponsiveImageUrls(string $conversionName = ''): array
+    public function getResponsiveImageUrls(string $conversionName = '')
     {
         return $this->responsiveImages($conversionName)->getUrls();
     }
